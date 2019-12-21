@@ -1,6 +1,8 @@
 package com.spot.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //step 1
         setContentView(R.layout.activity_main);
 
         for (int i = 0; i < 20; i++) {
@@ -22,4 +25,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //step 1a.
+        WordListAdapterAmit amit = new WordListAdapterAmit(this,mWordListAbdul);// step 2
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewChaya);
+        recyclerView.setAdapter(amit);//step 3
+
+        LinearLayoutManager nikitaLayoutManager = new LinearLayoutManager(this);
+
+        recyclerView.setLayoutManager(nikitaLayoutManager);
+
+    }
 }

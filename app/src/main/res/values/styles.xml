@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="logo_font_style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#000</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#fff</item>
+
+    </style>
+    <style name="logo_font_style.blue">
+        <item name="android:textColor">#123fdc</item>
+
+    </style>
+
 </resources>

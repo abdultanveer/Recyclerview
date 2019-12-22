@@ -12,6 +12,8 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
     private final LinkedList<String> mWordListAbdul = new LinkedList<>();
     private int mCount = 0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
